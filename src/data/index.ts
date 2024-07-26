@@ -1,5 +1,5 @@
 import { v4 as uuid } from 'uuid';
-import { IProduct } from "../interfaces";
+import { IFormInput, IProduct } from "../interfaces";
 
 export const productList: IProduct[] = [
     {
@@ -30,7 +30,7 @@ export const productList: IProduct[] = [
     {
         id : uuid(),
         title: "Product 3",
-        description: "Product 3 description",
+        description: "Product 3lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim vel nunc consectetur consectetur. Sed vel enim vel nun",
         imgURL: "/src/assets/315683025_171435502151238_5636215533578007924_n.jpg",
         price: "39.99",
         colors: ["orange", "brown", "black"],
@@ -54,7 +54,7 @@ export const productList: IProduct[] = [
     {
         id : uuid(),
         title: "Product 5",
-        description: "Product 5 description",
+        description: "Product 5 lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim vel nunc consectetur consectetur. Sed vel enim vel nun",
         imgURL: "/src/assets/319924333_1325160244886015_4841041216644686203_n.jpg",
         price: "59.99",
         colors: ["green", "blue", "yellow"],
@@ -66,7 +66,7 @@ export const productList: IProduct[] = [
     {
         id : uuid(),
         title: "Product 6",
-        description: "Product 6 description",
+        description: "Product 6 lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim vel nunc consectetur consectetur. Sed vel enim vel nun",
         imgURL: "/src/assets/315933407_520263473287747_8621597629894180495_n.jpg",
         price: "69.99",
         colors: ["red", "pink", "gray"],
@@ -76,5 +76,33 @@ export const productList: IProduct[] = [
         }
     }
 
+
+]
+
+export const formInputList:IFormInput[] = [
+    {
+        id:"title",
+        name:"title",
+        label:"Product Title",
+        type:"text",
+    },
+    {
+        id:"description",
+        name:"description",
+        label:"Product Description",
+        type:"text",
+    },
+    {
+        id:"image",
+        name:"imageURL",
+        label:"Product Image URL",
+        type:"text",
+    },
+    {
+        id:"price",
+        name:"price",
+        label:"Product Price",
+        type:"text",
+    }
 
 ]
