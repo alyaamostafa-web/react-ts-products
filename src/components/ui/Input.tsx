@@ -5,7 +5,6 @@ interface IProps extends InputHTMLAttributes<HTMLInputElement>{
   }
 
 
-
 const Input = ({...rest}: IProps) => {
   return (
 
