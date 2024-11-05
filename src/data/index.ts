@@ -1,5 +1,5 @@
 import { v4 as uuid } from 'uuid';
-import { IFormInput, IProduct } from "../interfaces";
+import { ICategory, IFormInput, IProduct } from "../interfaces";
 
 export const productList: IProduct[] = [
     {
@@ -11,7 +11,7 @@ export const productList: IProduct[] = [
         colors: ["red", "blue", "green"],
         category: {
             name: "Category 1",
-            imageUrl: "/src/assets/315651559_664154375170355_9186988138166142169_n.jpg"
+            imageURL: "/src/assets/315651559_664154375170355_9186988138166142169_n.jpg"
         }
 
     },
@@ -24,7 +24,7 @@ export const productList: IProduct[] = [
         colors: ["yellow", "purple", "pink"],
         category: {
             name: "Category 2",
-            imageUrl: "https://via.placeholder.com/100"
+            imageURL: "/src/assets/315677823_1362557837481932_6593174319359924998_n.jpg"
         }
     },
     {
@@ -36,7 +36,7 @@ export const productList: IProduct[] = [
         colors: ["orange", "brown", "black"],
         category: {
             name: "Category 3",
-            imageUrl: "https://via.placeholder.com/100"
+            imageURL: "/src/assets/315683025_171435502151238_5636215533578007924_n.jpg"
         }
     },
     {
@@ -48,7 +48,7 @@ export const productList: IProduct[] = [
         colors: ["purple", "pink", "gray"],
         category: {
             name: "Category 4",
-            imageUrl: "https://via.placeholder.com/100"
+            imageURL: "https://via.placeholder.com/100"
         }
     },
     {
@@ -60,7 +60,7 @@ export const productList: IProduct[] = [
         colors: ["green", "blue", "yellow"],
         category: {
             name: "Category 5",
-            imageUrl: "https://via.placeholder.com/100"
+            imageURL: "https://via.placeholder.com/100"
         }
     },
     {
@@ -72,7 +72,7 @@ export const productList: IProduct[] = [
         colors: ["red", "pink", "gray"],
         category: {
             name: "Category 6",
-            imageUrl: "https://via.placeholder.com/100"
+            imageURL: "https://via.placeholder.com/100"
         }
     }
 
@@ -106,3 +106,64 @@ export const formInputList:IFormInput[] = [
     }
 
 ]
+
+export const colors: string[] = [
+    "#a855f7",
+    "#2563eb",
+    "#84D2C5",
+    "#13005A",
+    "#A31ACB",
+    "#FF6E31",
+    "#3C2A21",
+    "#6C4AB6",
+    "#CB1C8D",
+    "#000000",
+    "#645CBB",
+  ];
+
+
+  export const categories: ICategory[] = [
+    {
+      id: uuid(),
+      name: "Nike",
+      imageURL:
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    },
+    {
+      id: uuid(),
+      name: "T-Shirt",
+      imageURL:
+        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+    },
+    {
+      id: uuid(),
+      name: "Clothes",
+      imageURL:
+        "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+    },
+    {
+      id: uuid(),
+      name: "PC Desktop",
+      imageURL:
+        "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1142&q=80",
+    },
+    {
+      id: uuid(),
+      name: "Furniture",
+      imageURL:
+        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    },
+    {
+      id: uuid(),
+      name: "Cars",
+      imageURL:
+        "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    },
+    {
+      id: uuid(),
+      name: "Camera",
+      imageURL:
+        "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    },
+  ];
+  
