@@ -12,3 +12,7 @@ export function txtslice(txt: string, max: number = 50) {
 
 
 //- JSDoc Comment
+
+export function numberWithCommas(x: string): string {
+  return x?.toString()?.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}

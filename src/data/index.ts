@@ -3,82 +3,149 @@ import { ICategory, IFormInput, IProduct } from "../interfaces";
 
 export const productList: IProduct[] = [
     {
-        id : uuid(),
-        title: "Product 1",
-        description: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim vel nunc consectetur consectetur. Sed vel enim vel nunc consectetur consectetur. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim vel nunc consectetur consectetur. Sed vel enim vel nunc consectetur consectetur. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim vel nunc consectetur consectetur. Sed vel enim vel nunc consectetur consectetur.",
-        imageURL: "/src/assets/315651559_664154375170355_9186988138166142169_n.jpg",
-        price: "19.99",
-        colors: ["red", "blue", "green"],
-        category: {
-            name: "Category 1",
-            imageURL: "/src/assets/315651559_664154375170355_9186988138166142169_n.jpg"
-        }
-
+      id: uuid(),
+      title: "Nike Shoes",
+      description:
+        "As luxury T-Shirt is just as distinctive and can be trimmed with premium materials like Nappa leather and carbon fiber.",
+      imageURL:
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      price: "350",
+      colors: [
+        "#A31ACB",
+        "#FF6E31", 
+        "#3C2A21",
+        "#CB1C8D",
+        "#645CBB",
+        "#FF0032",
+        "#820000",
+        "#13005A",
+        "#1F8A70",
+        "#84D2C5",
+      ],
+      category: {
+        name: "Nike",
+        imageURL:
+          "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      },
     },
     {
-        id : uuid(),
-        title: "Product 2",
-        description: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim vel nunc consectetur consectetur. Sed vel enim vel nunc consectetur consectetur. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim vel nunc consectetur consectetur. Sed vel enim vel nunc consectetur consectetur. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim vel nunc consectetur consectetur. Sed vel enim vel nunc consectetur consectetur.",
-        imageURL: "/src/assets/315677823_1362557837481932_6593174319359924998_n.jpg",
-        price: "29.99",
-        colors: ["yellow", "purple", "pink"],
-        category: {
-            name: "Category 2",
-            imageURL: "/src/assets/315677823_1362557837481932_6593174319359924998_n.jpg"
-        }
+      id: uuid(),
+      title: "2022 Genesis GV70: Nominee",
+      description:
+        "As luxury brands go, South Korea’s Genesis is still in its infancy, having sold its first cars (as an independent Hyundai spinoff), the G80 and G90 sedans, for the 2017 model year. Despite its relative youth, Genesis has had a string of successes: We named the automaker’s G70 sports sedan our Best of 2019 award winner, and its GV80 mid-size SUV was a nominee last year for our Best of the Year award. New for 2022, the GV70 compact luxury SUV impresses on a number of fronts. Sleek exterior styling bridges the gap between a traditional SUV and the coupelike SUV look that’s increasingly popular among luxury marques. The cabin is just as distinctive and can be trimmed with premium materials like Nappa leather and carbon fiber.",
+      imageURL:
+        "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      price: "500000",
+      colors: ["#FF0032", "#2563eb", "#FF6E31"],
+      category: {
+        name: "Cars",
+        imageURL:
+          "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      },
     },
     {
-        id : uuid(),
-        title: "Product 3",
-        description: "Product 3lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim vel nunc consectetur consectetur. Sed vel enim vel nun",
-        imageURL: "/src/assets/315683025_171435502151238_5636215533578007924_n.jpg",
-        price: "39.99",
-        colors: ["orange", "brown", "black"],
-        category: {
-            name: "Category 3",
-            imageURL: "/src/assets/315683025_171435502151238_5636215533578007924_n.jpg"
-        }
+      id: uuid(),
+      title: "Chevrolet Spark. 995cc Petrol",
+      description:
+        "As luxury brands go, South Korea’s Genesis is still in its infancy, having sold its first cars (as an independent Hyundai spinoff), the G80 and G90 sedans, for the 2017 model year. Despite its relative youth, Genesis has had a string of successes: We named the automaker’s G70 sports sedan our Best of 2019 award winner, and its GV80 mid-size SUV was a nominee last year for our Best of the Year award. New for 2022, the GV70 compact luxury SUV impresses on a number of fronts. Sleek exterior styling bridges the gap between a traditional SUV and the coupelike SUV look that’s increasingly popular among luxury marques. The cabin is just as distinctive and can be trimmed with premium materials like Nappa leather and carbon fiber.",
+      imageURL:
+        "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      price: "120000",
+      colors: ["#A31ACB", "#3C2A21", "#1F8A70", "#820000", "#FF0032"],
+      category: {
+        name: "Cars",
+        imageURL:
+          "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      },
     },
     {
-        id : uuid(),
-        title: "Product 4",
-        description: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim vel nunc consectetur consectetur. Sed vel enim vel nunc consectetur consectetur. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim vel nunc consectetur consectetur. Sed vel enim vel nunc consectetur consectetur. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim vel nunc consectetur consectetur. Sed vel enim vel nunc consectetur consectetur.",
-        imageURL: "/src/assets/315933407_520263473287747_8621597629894180495_n.jpg",
-        price: "49.99",
-        colors: ["purple", "pink", "gray"],
-        category: {
-            name: "Category 4",
-            imageURL: "https://via.placeholder.com/100"
-        }
+      id: uuid(),
+      title: "Casual Men Clothes",
+      description:
+        "As luxury T-Shirt is just as distinctive and can be trimmed with premium materials like Nappa leather and carbon fiber.",
+      imageURL:
+        "https://images.unsplash.com/photo-1552831388-6a0b3575b32a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
+      price: "1500",
+      colors: [],
+      category: {
+        name: "PC Desktop",
+        imageURL:
+          "https://images.unsplash.com/photo-1552831388-6a0b3575b32a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
+      },
     },
     {
-        id : uuid(),
-        title: "Product 5",
-        description: "Product 5 lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim vel nunc consectetur consectetur. Sed vel enim vel nun",
-        imageURL: "/src/assets/319924333_1325160244886015_4841041216644686203_n.jpg",
-        price: "59.99",
-        colors: ["green", "blue", "yellow"],
-        category: {
-            name: "Category 5",
-            imageURL: "https://via.placeholder.com/100"
-        }
+      id: uuid(),
+      title: "Nike Shoes",
+      description:
+        "As luxury T-Shirt is just as distinctive and can be trimmed with premium materials like Nappa leather and carbon fiber.",
+      imageURL:
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      price: "350",
+      colors: [
+        "#A31ACB",
+        "#FF6E31",
+        "#3C2A21",
+        "#CB1C8D",
+        "#645CBB",
+        "#FF0032",
+        "#820000",
+        "#13005A",
+        "#1F8A70",
+        "#84D2C5",
+      ],
+      category: {
+        name: "Nike",
+        imageURL:
+          "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      },
     },
     {
-        id : uuid(),
-        title: "Product 6",
-        description: "Product 6 lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim vel nunc consectetur consectetur. Sed vel enim vel nun",
-        imageURL: "/src/assets/315933407_520263473287747_8621597629894180495_n.jpg",
-        price: "69.99",
-        colors: ["red", "pink", "gray"],
-        category: {
-            name: "Category 6",
-            imageURL: "https://via.placeholder.com/100"
-        }
-    }
-
-
-]
-
+      id: uuid(),
+      title: "2022 Genesis GV70: Nominee",
+      description:
+        "As luxury brands go, South Korea’s Genesis is still in its infancy, having sold its first cars (as an independent Hyundai spinoff), the G80 and G90 sedans, for the 2017 model year. Despite its relative youth, Genesis has had a string of successes: We named the automaker’s G70 sports sedan our Best of 2019 award winner, and its GV80 mid-size SUV was a nominee last year for our Best of the Year award. New for 2022, the GV70 compact luxury SUV impresses on a number of fronts. Sleek exterior styling bridges the gap between a traditional SUV and the coupelike SUV look that’s increasingly popular among luxury marques. The cabin is just as distinctive and can be trimmed with premium materials like Nappa leather and carbon fiber.",
+      imageURL:
+        "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      price: "500000",
+      colors: ["#FF0032", "#2563eb", "#FF6E31"],
+      category: {
+        name: "Cars",
+        imageURL:
+          "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      },
+    },
+    {
+      id: uuid(),
+      title: "Chevrolet Spark. 995cc Petrol",
+      description:
+        "As luxury brands go, South Korea’s Genesis is still in its infancy, having sold its first cars (as an independent Hyundai spinoff), the G80 and G90 sedans, for the 2017 model year. Despite its relative youth, Genesis has had a string of successes: We named the automaker’s G70 sports sedan our Best of 2019 award winner, and its GV80 mid-size SUV was a nominee last year for our Best of the Year award. New for 2022, the GV70 compact luxury SUV impresses on a number of fronts. Sleek exterior styling bridges the gap between a traditional SUV and the coupelike SUV look that’s increasingly popular among luxury marques. The cabin is just as distinctive and can be trimmed with premium materials like Nappa leather and carbon fiber.",
+      imageURL:
+        "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      price: "120000",
+      colors: ["#A31ACB", "#3C2A21", "#1F8A70", "#820000", "#FF0032"],
+      category: {
+        name: "Cars",
+        imageURL:
+          "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      },
+    },
+    {
+      id: uuid(),
+      title: "Casual Men Clothes",
+      description:
+        "As luxury T-Shirt is just as distinctive and can be trimmed with premium materials like Nappa leather and carbon fiber.",
+      imageURL:
+        "https://images.unsplash.com/photo-1552831388-6a0b3575b32a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
+      price: "1500",
+      colors: [],
+      category: {
+        name: "PC Desktop",
+        imageURL:
+          "https://images.unsplash.com/photo-1552831388-6a0b3575b32a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
+      },
+    },
+  ];
+  
 export const formInputList:IFormInput[] = [
     {
         id:"title",
